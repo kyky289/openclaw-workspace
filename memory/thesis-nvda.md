@@ -44,3 +44,48 @@
 - A hyperscaler explicitly guiding 2027 capex *down*, or disclosing a majority-ASIC accelerator mix.
 
 **Monitor:** Q3 FY27 print (late Nov 2026); hyperscaler Q3/Q4 CY2026 capex guides; NVDA bond spreads vs AA index; HBM pricing (SK hynix/Micron/Samsung); OpenAI/Anthropic funding rounds; BIS/China export policy.
+
+## 2026-09-21 — Update
+
+**Previous thesis:**
+(2026-09-15, medium confidence) AI demand is settled for ~4 quarters; the debate is whether the FY28 +70% guide is collectible given who is paying, and terminal gross margin. ~13-14x FY28 = market refusing to underwrite the guide.
+
+**New evidence:**
+- Texas Gov. Abbott ordered a pause on data center approvals; ~300 large data centers could face delays, though many projects are not covered — Houston Public Media, 2026-08-27 (updated 2026-09-14). Predates the initial record but was not captured in it.
+- Oregon Gov. Kotek paused data center approvals on state land/buildings until 2027-07-01 — Jefferson Public Radio / Seaside Signal, 2026-09-09.
+- Reuters/Ipsos (via Express Tribune op-ed, 2026-09-20; poll itself not inspected): roughly a third of Americans approve of the pace of data center construction; Democratic senators cite Amodei's 2026-09-12 "pace the frontier" essay in data center moratorium bills ahead of November midterms. Secondary source.
+- Amodei pacing proposal endorsed by Altman, Musk, Hassabis; proposal text says pacing "does not mean halting model training"; no data center cancellations reported — CNBC 2026-09-20, Express Tribune 2026-09-20.
+- OpenAI private projection: -$278B cumulative FCF 2026-2030, ~$856B compute/infra commitments through 2030, 2026 revenue ~$36B; Altman says no IPO in 2026; new round in talks at >$1.2T — FT via BigGo, 2026-09-19 (secondary).
+- OpenAI CFO Friar: diversifying chip supply; custom inference chip; $122B cash on hand — CNBC interview via 24/7 Wall St, 2026-09-16 (secondary).
+- Price: $222.27 close 2026-09-18 (+~4.8% vs 2026-09-15 record) — CNN/stockinvest quote pages.
+
+**Impact on assumptions:**
+- New implicit assumption made explicit: (4) contracted compute can be physically deployed (permits, power, land) on the schedule that FY28 revenue requires. Previously unstated; now weakened at the margin by state-level pauses, not contradicted.
+- Assumption (1) (hyperscaler cash flow, not lab credit, funds FY28): unresolved; OpenAI's larger projected funding gap raises the stakes, but $122B cash and an investor-initiated round mean no near-term funding failure.
+- Assumption (3) (ASICs expand the pie): slightly weakened in posture — the largest private customer publicly frames Nvidia as one supplier among several for inference. Pricing/GM effect before revenue effect (inference).
+
+**Thesis status:**
+UNCHANGED
+
+**Reasoning:**
+No invalidation condition was triggered and no primary Nvidia data changed. Permitting/political friction is a new causal channel: chips shipped but not energized delay customer ROI and follow-on orders, and pushes demand from FY28 toward FY29 rather than removing it. Current evidence shows pauses on approvals, not cancellations of contracted builds, so it adds a monitoring priority and a named assumption rather than lowering confidence. Update written because it materially changes monitoring priorities and adds a key assumption.
+
+**Current thesis:**
+Unchanged from 2026-09-15: near-term demand settled; the open questions are FY28 collectability (now also including deployability) and terminal gross margin.
+
+**Confidence:**
+Medium — near-term (2-3 quarters) high; FY29+ low. Deployment friction is a new source of FY28 timing risk but not yet evidenced in orders or guidance.
+
+**Contrary evidence:**
+OpenAI's -$278B projected FCF through 2030 against Nvidia's $105B SB Energy guarantee; OpenAI's supplier diversification; state-level data center pauses spreading ahead of midterms.
+
+**Invalidation conditions:**
+All 2026-09-15 conditions still apply. Added:
+- A federal or multi-state moratorium (or the Texas pause becoming a multi-quarter freeze) that hyperscalers or Nvidia cite as delaying deployments or revenue recognition.
+- A hyperscaler or neocloud disclosing cancelled or materially delayed builds attributed to permitting/power, or Nvidia citing customer "readiness"/deployment timing in guidance.
+
+**Monitor next:**
+- Data center approvals and political resistance: Texas pause scope and duration; Oregon and other state/county moratoria (trackers: interconnectedcapital.com, savrn.com); federal/state moratorium bills citing the pacing essay; midterm outcome (2026-11-03) as a policy signal.
+- Hyperscaler Q3 CY2026 calls: any mention of permitting, power, or site delays vs capex guide.
+- Nvidia Q3 FY27 (late Nov 2026): commentary on customer data center readiness; inventory and supply-commitment trend.
+- Trump-Xi state dinner 2026-09-24 (China export policy); Micron FQ4 2026-09-30 (HBM pricing); OpenAI >$1.2T round closing.
