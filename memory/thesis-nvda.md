@@ -89,3 +89,44 @@ All 2026-09-15 conditions still apply. Added:
 - Hyperscaler Q3 CY2026 calls: any mention of permitting, power, or site delays vs capex guide.
 - Nvidia Q3 FY27 (late Nov 2026): commentary on customer data center readiness; inventory and supply-commitment trend.
 - Trump-Xi state dinner 2026-09-24 (China export policy); Micron FQ4 2026-09-30 (HBM pricing); OpenAI >$1.2T round closing.
+
+## 2026-09-22 — Update
+
+**Previous thesis:**
+(2026-09-21, medium confidence, UNCHANGED) Near-term demand settled; open questions are FY28 collectability (now including deployability: permits, power, land) and terminal gross margin. Added assumption (4): contracted compute can be physically deployed on the schedule FY28 revenue requires.
+
+**New evidence:**
+- Texas Gov. Abbott directed TCEQ to halt **all** permits sought by data center projects until the ERCOT/TWDB audits are complete; "no state agency shall move forward with regulatory approvals related to data center development" until the audit data is acquired. No end date. TCEQ compliance update due 2026-10-19. Abbott will seek to eliminate data center financial incentives next legislative session — gov.texas.gov press release (primary), 2026-09-21; Texas Tribune and CNBC, 2026-09-21.
+- Texas Tribune: the order appears aimed at behind-the-meter builds (own generation), which had bypassed the August ERCOT grid-connection pause. Non-ERCOT parts of the state are now also covered via TCEQ/PUC/TWDB jurisdiction.
+- BloombergNEF (via CNBC; report not inspected): the August Texas pause put almost 20% of the 253 GW US data center pipeline (~50 GW) at risk. Data Center Watch (advocacy group, via CNBC): $68B of development delayed or cancelled in Q2 2026 due to local pushback.
+- Local moratoria keep spreading (Marathon County WI 12-month; Jasper County SC first reading; Commerce City CO and Oakland CA considering) — local press, 2026-09-21.
+- Not yet corroborated: no hyperscaler, neocloud, or Nvidia statement citing Texas-related deployment delays found.
+
+**Impact on assumptions:**
+- Assumption (4) (deployability): weakened. The August pause covered grid interconnection only, and behind-the-meter builds could route around it. The new order closes that route and covers all state approvals in the state that was on track to become the largest US data center market. It is also open-ended, so the "multi-quarter freeze" path is now plausible rather than hypothetical.
+- Assumptions (1)-(3): no new evidence.
+
+**Thesis status:**
+WEAKENED (at the margin, via assumption 4 only)
+
+**Reasoning:**
+Texas is a large share of new capacity (Stargate Abilene; BNEF ~50 GW at risk). An open-ended halt on all state approvals for new projects would mainly hit 2027-2028 energization, which is the FY28-FY29 window that the +70% FY28 guide depends on. The effect is on timing, not demand: already-permitted and already-built sites are not affected, and capacity can move to other states, though NY, OR and many counties are also restricting. Invalidation condition (Texas multi-quarter freeze *cited by hyperscalers or Nvidia as delaying deployments*) is now approached: the first half is plausibly in motion; the second half (a customer or Nvidia citing it) has not occurred. The trigger is election-driven (Abbott reelection 2026-11-03), so reversal after the midterms is possible. Confidence is not lowered, because no order, guidance, or deployment data has changed yet.
+
+**Current thesis:**
+Near-term (2-3 quarters) demand settled. FY28 collectability now carries a more concrete deployment-timing risk: US permitting friction is escalating from pauses toward open-ended freezes in the largest growth state. This is more likely to shift revenue from FY28 into FY29 than to remove it, but it raises the chance that the +70% guide slips.
+
+**Confidence:**
+Medium — near-term high; FY29+ low. Unchanged in level. Direction of risk to FY28 is now clearly negative on deployability.
+
+**Contrary evidence:**
+Open-ended Texas halt on all state data center approvals; spreading state/local moratoria; OpenAI's projected -$278B FCF against Nvidia's $105B guarantee. Supporting: Huang expects ~2x chip unit sales next year; GS sees US hyperscaler capex at $1.4T in 2027; Micron HBM reportedly sold out through 2027 (secondary).
+
+**Invalidation conditions:**
+All prior conditions still apply. Sharpened:
+- Texas halt still in force after the 2026-10-19 TCEQ update *and* after the 2026-11-03 election, combined with any hyperscaler, neocloud, or Nvidia citing Texas/permitting delays in Q3 CY2026 calls or Q3 FY27 guidance.
+
+**Monitor next:**
+- TCEQ compliance update 2026-10-19; ERCOT/TWDB audit timeline; any carve-out for projects already under construction.
+- Hyperscaler Q3 CY2026 calls (late Oct): Texas/permitting/power delay mentions, 2027 capex guides.
+- Oracle/OpenAI Stargate Texas sites: any delay or relocation announcement.
+- Trump-Xi state dinner 2026-09-24; Micron FQ4 2026-09-30; Nvidia Q3 FY27 (late Nov).

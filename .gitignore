@@ -1,0 +1,30 @@
+# Secrets / credentials
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+*token*
+
+# OpenClaw runtime / temporary data
+.openclaw-cli-images/
+backups/
+drafts/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# OpenClaw private memory / runtime state
+DREAMS.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+USER.md
+memory/.dreams/
+memory/dreaming/
+memory/20*.md
+state/
