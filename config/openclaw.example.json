@@ -1,0 +1,351 @@
+{
+  "wizard": {
+    "securityAcknowledgedAt": "2026-09-15T20:22:27.370Z",
+    "accessMode": "guarded",
+    "lastRunAt": "2026-09-19T03:25:36.790Z",
+    "lastRunVersion": "2026.9.4",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "plugins": {
+    "entries": {
+      "anthropic": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        },
+        "enabled": true
+      },
+      "codex": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "brave": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "YOUR_BRAVE_API_KEY"
+          }
+        }
+      },
+      "telegram-active-window": {
+        "enabled": true
+      }
+    },
+    "load": {
+      "paths": [
+        "/home/openclaw/openclaw-plugins/telegram-active-window"
+      ]
+    }
+  },
+  "meta": {
+    "migrations": {
+      "modelPolicyAllowlist": true
+    },
+    "lastTouchedVersion": "2026.9.4"
+  },
+  "telemetry": {
+    "enabled": false,
+    "consentedAt": "2026-09-15T20:33:55.749Z"
+  },
+  "agents": {
+    "defaults": {
+      "model": "anthropic/claude-opus-5",
+      "workspace": "/home/openclaw/.openclaw/workspace",
+      "userTimezone": "Asia/Hong_Kong",
+      "bootstrapMaxChars": 30000,
+      "systemAgent": {
+        "agentId": "main"
+      },
+      "heartbeat": {
+        "agentId": "main"
+      }
+    },
+    "ownership": "explicit",
+    "entries": {
+      "main": {
+        "models": {
+          "anthropic/claude-opus-5": {
+            "agentRuntime": {
+              "id": "claude-cli"
+            }
+          }
+        },
+        "workspace": "/home/openclaw/.openclaw/workspace"
+      },
+      "group-tim": {
+        "name": "group-tim",
+        "workspace": "/home/openclaw/.openclaw/workspace-group-tim",
+        "agentDir": "/home/openclaw/.openclaw/agents/group-tim/agent",
+        "identity": {
+          "name": "Tim",
+          "emoji": "\ud83d\udc36",
+          "theme": "research partner for the tim\u72d7\u7a9d group (\"\u4e00\u6761\u9760\u8c31\u7684\u72d7\")"
+        },
+        "model": "anthropic/claude-sonnet-5",
+        "sandbox": {
+          "mode": "all",
+          "backend": "podman",
+          "scope": "agent",
+          "workspaceAccess": "rw",
+          "docker": {
+            "image": "openclaw-sandbox:bookworm-slim",
+            "network": "none",
+            "readOnlyRoot": true,
+            "capDrop": [
+              "ALL"
+            ]
+          }
+        },
+        "tools": {
+          "sandbox": {
+            "tools": {
+              "allow": [
+                "exec",
+                "process",
+                "read",
+                "ls",
+                "write",
+                "edit",
+                "apply_patch",
+                "view_image",
+                "web_search",
+                "web_fetch",
+                "memory_search",
+                "memory_get",
+                "automations",
+                "sessions_list",
+                "sessions_history",
+                "sessions_search",
+                "sessions_send",
+                "sessions_spawn",
+                "sessions_yield",
+                "subagents",
+                "session_status",
+                "ask_user",
+                "progress_card"
+              ],
+              "deny": [
+                "browser",
+                "canvas",
+                "computer",
+                "mobile_ui",
+                "nodes",
+                "gateway",
+                "feishu",
+                "googlechat",
+                "nostr",
+                "buzz",
+                "msteams",
+                "mattermost",
+                "nextcloud-talk",
+                "matrix",
+                "raft",
+                "a2a",
+                "line",
+                "zalo",
+                "clickclack",
+                "zalouser",
+                "sms",
+                "synology-chat",
+                "tlon",
+                "discord",
+                "imessage",
+                "irc",
+                "reef",
+                "signal",
+                "slack",
+                "telegram",
+                "twitch",
+                "whatsapp"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "YOUR_GATEWAY_TOKEN"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off"
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "fetch": {
+        "enabled": true
+      },
+      "search": {
+        "enabled": true,
+        "provider": "brave",
+        "openaiCodex": {}
+      }
+    },
+    "media": {
+      "image": {
+        "enabled": true
+      }
+    },
+    "agentToAgent": {
+      "enabled": false
+    }
+  },
+  "hooks": {
+    "internal": {
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
+      "groupPolicy": "allowlist",
+      "groups": {
+        "-5491176253": {
+          "groupPolicy": "open",
+          "requireMention": false
+        }
+      },
+      "historyLimit": 20
+    }
+  },
+  "commands": {
+    "ownerAllowFrom": [
+      "telegram:7952086484"
+    ]
+  },
+  "memory": {
+    "search": {
+      "provider": "openai",
+      "remote": {
+        "apiKey": "YOUR_MEMORY_SEARCH_API_KEY"
+      },
+      "model": "text-embedding-3-small"
+    }
+  },
+  "skills": {
+    "entries": {
+      "1password": {
+        "enabled": false
+      },
+      "blogwatcher": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "coding-agent": {
+        "enabled": false
+      },
+      "eightctl": {
+        "enabled": false
+      },
+      "gemini": {
+        "enabled": false
+      },
+      "gh-issues": {
+        "enabled": false
+      },
+      "gifgrep": {
+        "enabled": false
+      },
+      "github": {
+        "enabled": false
+      },
+      "gog": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "mcporter": {
+        "enabled": false
+      },
+      "model-usage": {
+        "enabled": false
+      },
+      "nano-pdf": {
+        "enabled": false
+      },
+      "obsidian": {
+        "enabled": false
+      },
+      "openai-whisper": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "sag": {
+        "enabled": false
+      },
+      "sherpa-onnx-tts": {
+        "enabled": false
+      },
+      "songsee": {
+        "enabled": false
+      },
+      "sonoscli": {
+        "enabled": false
+      },
+      "spotify-player": {
+        "enabled": false
+      },
+      "summarize": {
+        "enabled": false
+      },
+      "trello": {
+        "enabled": false
+      },
+      "xurl": {
+        "enabled": false
+      }
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "telegram",
+        "accountId": "*"
+      }
+    }
+  ],
+  "talk": {
+    "agentId": "main"
+  }
+}
