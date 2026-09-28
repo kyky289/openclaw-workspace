@@ -1,0 +1,14 @@
+{
+  "name": "openclaw-research-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "description": "Disabled-by-default local research tools for explicit private owners and approved owners or collaborators in isolated Telegram group contexts.",
+  "openclaw": { "extensions": ["./index.mjs"] },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:runtime": "node test/installed-runtime.test.mjs",
+    "test:entry": "node test/bundled-entry.test.mjs"
+  }
+}

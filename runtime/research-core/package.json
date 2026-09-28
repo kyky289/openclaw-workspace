@@ -1,0 +1,15 @@
+{
+  "name": "openclaw-research-core",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Scoped research, journal, recoverable work queue, model budgets, opt-in native media and offline investment metrics.",
+  "engines": { "node": ">=24" },
+  "exports": { "./router": "./src/router.mjs", "./journal": "./src/journal.mjs", "./adapter": "./src/adapter.mjs",
+    "./research": "./src/research.mjs", "./budget": "./src/budget.mjs", "./dispatcher": "./src/dispatcher.mjs",
+    "./monitor-queue": "./src/monitor-queue.mjs", "./media": "./src/media.mjs",
+    "./openclaw-media-backend": "./src/openclaw-media-backend.mjs", "./performance": "./src/performance.mjs",
+    "./workflow": "./src/workflow.mjs", "./review": "./src/review.mjs", "./host": "./src/host.mjs" },
+  "bin": { "research-core": "./src/cli.mjs", "research-runtime": "./src/runtime-cli.mjs" },
+  "scripts": { "test": "node --test test/*.test.mjs", "eval:offline": "node src/cli.mjs eval-offline" }
+}

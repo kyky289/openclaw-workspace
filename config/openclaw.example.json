@@ -41,7 +41,7 @@
     },
     "load": {
       "paths": [
-        "/home/openclaw/openclaw-plugins/telegram-active-window"
+        "/path/to/openclaw/plugins/telegram-active-window"
       ]
     }
   },
@@ -58,7 +58,7 @@
   "agents": {
     "defaults": {
       "model": "anthropic/claude-opus-5",
-      "workspace": "/home/openclaw/.openclaw/workspace",
+      "workspace": "/path/to/openclaw/workspace",
       "userTimezone": "Asia/Hong_Kong",
       "bootstrapMaxChars": 30000,
       "systemAgent": {
@@ -78,16 +78,16 @@
             }
           }
         },
-        "workspace": "/home/openclaw/.openclaw/workspace"
+        "workspace": "/path/to/openclaw/workspace"
       },
       "group-tim": {
         "name": "group-tim",
-        "workspace": "/home/openclaw/.openclaw/workspace-group-tim",
-        "agentDir": "/home/openclaw/.openclaw/agents/group-tim/agent",
+        "workspace": "/path/to/openclaw/workspace-group-tim",
+        "agentDir": "/path/to/openclaw/agents/group-tim/agent",
         "identity": {
           "name": "Tim",
-          "emoji": "\ud83d\udc36",
-          "theme": "research partner for the tim\u72d7\u7a9d group (\"\u4e00\u6761\u9760\u8c31\u7684\u72d7\")"
+          "emoji": "🐶",
+          "theme": "research partner for the 目标群 group (\"一条靠谱的狗\")"
         },
         "model": "anthropic/claude-sonnet-5",
         "sandbox": {
@@ -220,7 +220,7 @@
       "botToken": "YOUR_TELEGRAM_BOT_TOKEN",
       "groupPolicy": "allowlist",
       "groups": {
-        "-5491176253": {
+        "YOUR_TELEGRAM_GROUP_ID": {
           "groupPolicy": "open",
           "requireMention": false
         }
@@ -230,7 +230,7 @@
   },
   "commands": {
     "ownerAllowFrom": [
-      "telegram:7952086484"
+      "telegram:YOUR_TELEGRAM_USER_ID"
     ]
   },
   "memory": {
