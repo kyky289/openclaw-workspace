@@ -1,0 +1,14 @@
+{
+  "id": "telegram-active-window",
+  "name": "Telegram Active Window",
+  "description": "Controls temporary Telegram group conversation activation.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  }
+}

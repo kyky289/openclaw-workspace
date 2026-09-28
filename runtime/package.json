@@ -1,0 +1,16 @@
+{
+  "name": "openclaw-research-review",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node ops/test-offline.mjs",
+    "check": "node ops/check-syntax.mjs",
+    "demo": "node research-core/src/cli.mjs pipeline-demo",
+    "demo:runtime": "node research-core/src/cli.mjs runtime-demo",
+    "eval:offline": "node research-core/src/cli.mjs eval-offline",
+    "build:bridge": "node ops/build-research-bridge.mjs",
+    "test:models-offline": "python3 ops/test/evaluate-models.test.py",
+    "test:telegram": "npm --prefix telegram-active-window test"
+  }
+}

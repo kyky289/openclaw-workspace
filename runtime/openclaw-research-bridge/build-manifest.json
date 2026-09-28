@@ -1,0 +1,57 @@
+{
+  "kind": "local-core-bundle",
+  "installed": false,
+  "activated": false,
+  "files": [
+    {
+      "path": "lib/execution-bindings.mjs",
+      "source": "research-core/src/execution-bindings.mjs",
+      "sha256": "c95a8d1dd6ebb6f85e549eb673913902711a10be02476e77ac0094cd5517c53e"
+    },
+    {
+      "path": "lib/execution-host.mjs",
+      "source": "research-core/src/execution-host.mjs",
+      "sha256": "2696d4ac4958a3ce0c7307059fd33e6fa33215eb0be1471840077248af56abf4"
+    },
+    {
+      "path": "lib/execution-receipts.mjs",
+      "source": "research-core/src/execution-receipts.mjs",
+      "sha256": "651d4d8abd3e75600d57c516ae748c04977ce2ec7727a01adf0e8856c2d9490e"
+    },
+    {
+      "path": "lib/host.mjs",
+      "source": "research-core/src/host.mjs",
+      "sha256": "5248d40ef94f8745bc708ef0cd88abb556e5d3d77a0638275bce9444ba210dd3"
+    },
+    {
+      "path": "lib/journal.mjs",
+      "source": "research-core/src/journal.mjs",
+      "sha256": "c0519760e5f48b5eb84c80f669bd57b2ddd90876c7eda1ecf933ee37f050fc90"
+    },
+    {
+      "path": "lib/monitor-queue.mjs",
+      "source": "research-core/src/monitor-queue.mjs",
+      "sha256": "36c8e4662f5f3757574dd6d05c0823742be75e9b704aff156d0026b7c95dedcc"
+    },
+    {
+      "path": "lib/private-store.mjs",
+      "source": "research-core/src/private-store.mjs",
+      "sha256": "cea008b983ff2327e32dccbe1fa3dc470e8a2aaf3da71a696c9f801976d7a1c2"
+    },
+    {
+      "path": "lib/research.mjs",
+      "source": "research-core/src/research.mjs",
+      "sha256": "a3b0c39c5bda5a5bdcc35f896b2bb8e39cb6199b6f1b6d999de543452928bc90"
+    },
+    {
+      "path": "lib/review.mjs",
+      "source": "research-core/src/review.mjs",
+      "sha256": "26f3ddac6471180282eda10170d523bce2fe508d79876744aa85648d02c7fdb3"
+    },
+    {
+      "path": "lib/workflow.mjs",
+      "source": "research-core/src/workflow.mjs",
+      "sha256": "ee26cd3ac9d901e5bdfdbf3a6cd2a88fd11441c04ca3b5f809cd1cc7bc892100"
+    }
+  ]
+}

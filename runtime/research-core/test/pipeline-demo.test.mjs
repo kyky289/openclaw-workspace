@@ -1,0 +1,22 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { runPipelineDemo } from '../src/pipeline-demo.mjs';
+test('research publication survives lost queue ack without duplicate model calls or records', async () => {
+  const result = await runPipelineDemo();
+  assert.equal(result.eventDeduplicated, true);
+  assert.equal(result.recoveredSameTask, true);
+  assert.equal(result.publicationDeduplicated, true);
+  assert.equal(result.journalRecordCount, 1);
+  assert.equal(result.queueStatus, 'completed');
+  assert.equal(result.syntheticInvocations, 1);
+  assert.equal(result.dispatchReplayed, true);
+  assert.equal(result.budget.spentUnits, 4);
+  assert.equal(result.budget.heldUnits, 0);
+  assert.equal(result.externalModelCalls, 0);
+  assert.equal(result.realOrders, 0);
+  assert.equal(result.telegramMessages, 0);
+  assert.equal(result.syntheticPerformance.winRate, 0.75);
+  assert.equal(result.syntheticPerformance.netPnl, -20);
+  assert.equal(result.illustrativePaperGate.status, 'fail');
+  assert.equal(result.realTradingAuthorized, false);
+});
